@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox연습</title>
+    <style>
+        body{
+            width: 1000px;
+
+            padding: 0;
+            margin: 0 auto;
+        }
+        .wrap{
+            border: 1px solid black;
+        }
+        .header{
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            border: 1px solid black;
+            border-top:none;
+            align-items: center;
+            border-left: none;
+        }
+        .nav li{
+            list-style: none;
+            margin: 0 6px;
+        }
+        .nav a{
+            color:black;
+        }
+        .nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        .nav{
+            border: 1px solid black;
+            border-top: none;
+            border-left: none;
+        }
+        .main{
+            display: flex;
+            height: 450px;
+        }
+        .aside{
+            flex:2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid black;
+            border-top: none;
+            border-left: none;
+        }
+        .section{
+            flex:3;
+            margin-top: 20px;
+            text-align: center;
+            color: green;
+            font-weight: bold;
+            border-bottom: 1px solid black;
+        }
+        #img{
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+        #img img{
+            padding-right: 25px;
+        }
+        .footer{
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+    <div class="header">미래산업 주식회사</div>
+    <div class="nav">
+        <ul>
+            <a href="#">
+                <li>홈</li>
+            </a><a href="#">
+                <li>회사소개</li>
+            </a><a href="#">
+                <li>포트폴리오</li>
+            </a><a href="#">
+                <li>자주하는질문</li>
+            </a><a href="#">
+                <li>고객센터</li>
+            </a>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="aside">고객지원<br>5555-8888</div>
+        <div class="section"><img src="work_office.jpg" width="500px" height="300px"><div>효율적인 업무 시스템</div>
+        <div id="img"><img src="google.png" alt=""><img src="kakao.png" alt=""></div>
+    </div>
+    </div>
+    <div class="footer">홍길동 주식회사 02-1234-1234<br>
+    서울시 강남구 강남동 100번지</div>
+</div>
+</body>
+</html>

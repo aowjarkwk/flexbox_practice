@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox연습2</title>
+    <style>
+        body{
+            width: 750px;
+            margin: 0 auto;
+        }
+        .wrap{
+            border: 1px solid black;
+        }
+        .header{
+            padding: 20px 0px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid gray;
+            
+        }
+        .main{
+            display: flex;
+            height: 300px;
+        }
+        .section{
+            margin-top: 20px;
+
+            flex:2;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-between;
+            height: 300px;
+    
+        }
+        
+        .section input{
+            margin-left: 20px;
+            width: 300px;
+            height: 45px;
+            }
+            #checkbox{
+                width: auto;
+            }
+            input[type=submit]{
+                width: 310px;
+                background-color: rgb(99, 8, 151);
+                color: white;
+            }
+        
+            .Ip{
+                margin-right: 90px;
+
+            }
+        .section div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .section div label{
+            margin-left:10px
+        }
+        .section div div span{
+            margin-right: 5px;
+        }
+        .section div div span:nth-child(2){
+            color:blue;
+            font-weight: bold;    
+        }
+        #idpass a{
+            color: gray;
+            text-decoration: none;
+            
+        }
+        #idpass{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            
+            margin: 0;
+            padding: 0;
+            margin-bottom: 50px;
+            
+        }
+        .ad{
+            flex:1;
+            display: flex;
+            border: 1px solid gray;
+            justify-content: center;
+            align-items: center;
+            margin: 15px;
+            margin-right: 80px;
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            border-top: 1px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header"><img src="daum_logo.png" ></div>
+        <div class="main">
+            <div class="section"><input type="text"><input type="password">
+            <input type="submit" value="로그인">
+            <div>
+                <div><input type="checkbox" id="checkbox">
+                    <label for="checkbox">로그인 상태 유지</label></div>
+            
+            <div class="Ip"><span>IP 보안</span><span>ON</span></div>
+
+            
+        </div>
+        <div id="idpass"><a href="#">아이디 찾기</a>&nbsp&nbsp|&nbsp&nbsp<a href="#">비밀번호 찾기</a></div>
+        </div>
+            <div class="ad"><img src="daum.jpg" height="250px"></div>
+        </div>
+        <div class="footer">카카오 주식회사 | 고객센터</div>
+    </div>
+</body>
+</html>
